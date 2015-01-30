@@ -5,7 +5,7 @@ sharejs example to run one line command
 npm install && npm start
 
 # ...
-express framework - http server
-share - operational tranformation, document management
-browserchannel - google version of socketio
-livedb - dbconnector
+* express framework - http server
+* share - operational tranformation, document management
+* browserchannel - google version of socketio
+* livedb - dbconnector
