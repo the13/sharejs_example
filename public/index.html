@@ -27,14 +27,15 @@ console.log(s);
 var sjs = new window.sharejs.Connection(s);
 
 var doc = sjs.get('users', 'seph');
-doc.subscribe();
 
 window.setTimeout(function () {
 	if (!doc.type) doc.create('text');
+  else doc.subscribe();
+
 	if (doc.type && doc.type.name === 'text'){
 		doc.attachTextarea(elem);
 	}
-}, 1000);
+}, 2000); // timeout doc
 
 
 </script>
